@@ -1,5 +1,7 @@
 package Hospital;
 
+import Hospital.doctors.Position;
+
 public class Main {
     public static void main(String[] args) {
         Patient p1 = new Patient(Position.HOUSE_SURGEON);
@@ -15,7 +17,6 @@ public class Main {
         Patient p3 = new Patient(Position.THERAPEUTIC);
         System.out.println(p3);
         p3.blank();
-        
 
     }
 }

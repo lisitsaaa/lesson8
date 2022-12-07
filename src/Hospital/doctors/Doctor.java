@@ -1,4 +1,4 @@
-package Hospital;
+package Hospital.doctors;
 
 public class Doctor {
     public void doWork() {

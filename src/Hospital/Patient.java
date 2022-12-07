@@ -1,5 +1,7 @@
 package Hospital;
 
+import Hospital.doctors.Position;
+
 public class Patient {
     Position position;
 

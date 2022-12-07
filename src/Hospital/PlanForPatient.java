@@ -1,5 +1,10 @@
 package Hospital;
 
+import Hospital.doctors.Dentist;
+import Hospital.doctors.HouseSurgeon;
+import Hospital.doctors.Position;
+import Hospital.doctors.Therapeutic;
+
 public class PlanForPatient {
     public void chooseDoctor(Position position) {
         if (position == Position.HOUSE_SURGEON) {

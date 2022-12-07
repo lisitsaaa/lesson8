@@ -1,6 +1,6 @@
-package Hospital;
+package Hospital.doctors;
 
-public class Therapeutic extends Doctor{
+public class Therapeutic extends Doctor {
 
     private final Position position ;
     public Therapeutic() {

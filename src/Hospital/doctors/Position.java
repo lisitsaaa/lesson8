@@ -1,4 +1,4 @@
-package Hospital;
+package Hospital.doctors;
 
 public enum Position {
     HOUSE_SURGEON,

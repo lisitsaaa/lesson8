@@ -1,4 +1,4 @@
-package Hospital;
+package Hospital.doctors;
 
 public class HouseSurgeon extends Doctor {
     private final Position position;
