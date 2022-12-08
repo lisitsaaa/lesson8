@@ -2,17 +2,18 @@ package Hospital;
 
 import Hospital.doctors.Dentist;
 import Hospital.doctors.HouseSurgeon;
+import Hospital.doctors.Position;
 import Hospital.doctors.Therapeutic;
 
 public class Patient {
     private final PlanForPatient plan;
 
-    public Patient(int kod) {
-        this.plan = new PlanForPatient(kod);
+    public Patient(Position position) {
+        this.plan = new PlanForPatient(position);
     }
 
     public void chooseDoctor() {
-        switch (plan.workWithKod()) {
+        switch (plan.getPosition()) {
             case HOUSE_SURGEON -> {
                 System.out.println(plan);
                 HouseSurgeon hs1 = new HouseSurgeon();

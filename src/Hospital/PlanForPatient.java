@@ -3,25 +3,13 @@ package Hospital;
 import Hospital.doctors.Position;
 
 public class PlanForPatient {
-    private final int kod;
     private Position position;
 
-    public PlanForPatient(int kod) {
-        this.kod = kod;
+    public PlanForPatient(Position position) {
+        this.position = position;
     }
 
-    public Position workWithKod() {
-        switch (kod) {
-            case 1 -> {
-                position = Position.HOUSE_SURGEON;
-            }
-            case 2 -> {
-                position = Position.DENTIST;
-            }
-            case 3 -> {
-                position = Position.THERAPEUTIC;
-            }
-        }
+    public Position getPosition() {
         return position;
     }
 
