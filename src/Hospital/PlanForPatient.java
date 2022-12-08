@@ -1,29 +1,28 @@
 package Hospital;
 
-import Hospital.doctors.Dentist;
-import Hospital.doctors.HouseSurgeon;
 import Hospital.doctors.Position;
-import Hospital.doctors.Therapeutic;
 
 public class PlanForPatient {
-    Position position;
+    private final int kod;
+    private Position position;
 
-    public PlanForPatient() {
-        //this.position = position;
+    public PlanForPatient(int kod) {
+        this.kod = kod;
     }
 
-    public void chooseDoctor(Position position) {
-        switch (position) {
-            case HOUSE_SURGEON -> {
-                System.out.println(position);
+    public Position workWithKod() {
+        switch (kod) {
+            case 1 -> {
+                position = Position.HOUSE_SURGEON;
             }
-            case DENTIST -> {
-                System.out.println(position);
+            case 2 -> {
+                position = Position.DENTIST;
             }
-            case THERAPEUTIC -> {
-                System.out.println(position);
+            case 3 -> {
+                position = Position.THERAPEUTIC;
             }
         }
+        return position;
     }
 
     @Override
